@@ -1,37 +1,130 @@
-\documentclass{article}
+\documentclass{coastal_paper}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{textgreek}
+\usepackage{lineno}
+\usepackage[nolists]{endfloat}
+\usepackage{pgfplots}
+\usetikzlibrary{external}
+\pgfplotsset{compat=1.9}
+\usepgfplotslibrary{colorbrewer}
+\usepgfplotslibrary{statistics}
 
+\graphicspath{ {./images/fgmax}}
 \title{Impacts of Barrier-Island Breaching On Mainland Flooding During Storm Events}
 \author{Catherine Jeffries, Robert Weiss, Jennifer Irish, Kyle Mandli}
-\date{September 2019}
-
 \begin{document}
-
+\sffamily
 \maketitle
+\begin{abstract}
+Barrier islands can protect the mainland from flooding during storms by affecting the storm surge. However, the protective capability is reduced when barrier islands breach and a direct hydrodynamic connection between the water bodies on both sides of the barrier island is established. Breaching of barrier islands during large storm events is complicated, involving sediment transport and nonlinear processes that connect water and sediment transport, dune height, and island width among other factors. Because of the many factors involved in the breaching process it is difficult to predict where and when a breach will form. In order to assess how barrier-island breaching impacts flooding on the mainland, we use a statistical approach to analyze the sensitivity of mainland storm-surge runup to barrier island breaching by randomizing the location, time, and extent of a breach event. The shape of the breach is approximated with a gaussian distribution imposed on the barrier island that deepens over time. Breach formation is time dependent after a triggering event, for preliminary work specified as 1 m of flow depth over the barrier island, during a simulated storm event using GeoClaw, and breach growth is limited by the flow conditions in its rate of change and when it achieves equilibrium. Varying the timing, extent, and locations of the barrier island breaches during a storm event will provide insight into how the mainland coastline responds to breaches during storms. This insight is invaluable in preparing shoreline communities to be aware of the differing ways the regions can change during storms, depending on how the barrier islands behave. Additionally, we can offer statistical insights into where a breach would impact the mainland coastline more drastically in an effort to provide data for planning and warning purposes.    
+\end{abstract}
+\newpage
 
-\section{Abstract}
-Barrier islands can protect the mainland from flooding during storms by affecting the storm
-surge. However, the protective capability is reduced when barrier islands breach and a direct
-hydrodynamic connection between the water bodies on both sides of the barrier island is
-established. Breaching of barrier islands during large storm events is complicated, involving
-sediment transport and nonlinear processes that connect water and sediment transport, dune
-height, and island width among other factors. Because of the many factors involved in the
-breaching process it is difficult to predict where and when a breach will form. In order to
-assess how barrier-island breaching impacts flooding on the mainland, we use a statistical
-approach to analyze the sensitivity of mainland storm-surge runup to barrier island breaching
-by randomizing the location, time, and extent of a breach event. The shape of the breach is
-approximated with a gaussian distribution imposed on the barrier island that deepens over
-time. Breach formation is time dependent after a triggering event, for preliminary work
-specified as 1 m of flow depth over the barrier island, during a simulated storm event using
-GeoClaw, and breach growth is limited by the flow conditions in its rate of change and when it
-achieves equilibrium. Varying the timing, extent, and locations of the barrier island breaches
-during a storm event will provide insight into how the mainland coastline responds to breaches
-during storms. This insight is invaluable in preparing shoreline communities to be aware of the
-differing ways the regions can change during storms, depending on how the barrier islands
-behave. Additionally, we can offer statistical insights into where a breach would impact the
-mainland coastline more drastically in an effort to provide data for planning and warning
-purposes.
-
+\linenumbers
 \section{Introduction}
+Barrier islands are elongate, shore-parallel, low-relief land masses that are adjacent to approximately 6.5\% of the world's coastlines \citep{Oertel1985TheSystem,Stutz2001ADistribution}. \citet{Oertel1985TheSystem} defines barrier island systems as containing six sedimentary environments; proximity to the mainland, a back-barrier region (bay or lagoon), an inlet and inlet delta, the barrier island, the barrier platform, and the shoreface. Barrier islands are protective structures that assist with dissipating the wave energy approaching the mainland from the ocean. The dissipation of wave energy ensures that barrier islands undergo significant change during storms and hurricanes, one of which is breaching. A breach is an opening in a narrow landmass, such as a barrier island, that allows a direct hydrodynamic connection between the ocean and the back-barrier bay or lagoon \citep{Kraus2003, Kraus2003a, Wamsley2005CoastalClosure, KRAUS2005}. Breaching that occurs naturally is a complicated process that combines waves, overwash, barrier island width and height, and storm forcing to initiate. 
+
+Large storms, such as hurricanes, can have a devastating impact on barrier islands and the mainland coastline. One of the many hazards presented by such storms is storm surge, a forced wave driven by wind and atmospheric pressure changes during the hurricane. Storm surge that causes a water level gradient between the ocean and back-barrier region will force water to flow rapidly over the barrier island and erode the sediment of the island in an effort to equalize the water level. This gradient involves a critical elevation of water levels that may not necessarily involve inundation of the island, but can still cause erosion \citep{Kraus2002, Kraus2003}. Storm surge and wave setup both increase the elevation of the water in the ocean and the back-barrier region; these water levels in addition to wave action reduce the stability of the barrier island dune slope \citep{Kraus2003, Kraus2002}. However, wave attack by itself, while weakening the dune slope, is unlikely to induce breaching because the net erosion is seaward and does not push erosion landward \citep{Pierce1970}. Breaching can occur through two different transport methods, overtopping (overwash) and seepage and liquefaction \citep{Kraus2002, Kraus2003}.
+
+During storm-induced overwash and inundation of the islands, the water flowing across the island can scour a channel between the sea and the back-barrier region \citep{Kraus2003, Pierce1970, Roelvink2009}. For this scouring to occur a strong flow and some duration of inundation are required. Breaching can occur from both the seaward and landward side of the barrier island but field data is limited in its ability to illustrate from which direction a breach is initiated \citep{Kraus2003, Pierce1970, Smallegan2017}. However, \citet{Smallegan2017} show that bay surge that comes after peak ocean surge is more likely to lead to breaching from the landward side of the barrier island. This is due to peak ocean surge having already weakened the dune through erosion caused by wave attack and swash \citep{Kraus2003, Smallegan2017}. Breach location is challenging to correctly identify; localized lows in dune height and narrower portions of the barrier island are more likely to be potential breach locations \citep{Kraus2003, Kraus2003a}. \citet{Vander2019} simulated Hurricane Sandy (2012) with both wave forcing and sediment transport to illustrate barrier island morphodynamics during the hurricane and correctly modeled a breach but the location was simulated to be some distance away from where the breach was located in reality. 
+
+Breach dimensions are difficult to quantify, the growth of breaches over time has been documented \citep{Kraus2003a, Schmeltz1983Breach/InletInlet.}. However, these studies address the days, weeks, or months following the storm. Initial breach size during a storm is less known. Lab and field experiments by \citet{Visser1999} for breaches in dikes are useful but the breach is initiated with a pre-drilled hole in the dike and does not simulate exactly what occurs to barrier islands during storms. \citet{Buynevich2006} performed a geologic mapping of some New England barrier islands and found geoloci signatures to indicate the islands' past history with breaching and overwash. They found ephemeral breaches with widths of 10 - 30 m before closing and breach depths of 1-3 meters below the dune crest. A few post-storm surveys have defined breach sizes before natural or forced closing. \cite{Kraus2003a} discusses Pike's inlet on Long Island, NY was initially 304.8 m wide and a nearby breach named Little Pike's inlet was initially 30.48 m wide but over several months grew to over 914.4 m before it was closed. A breach near Moriches Inlet studied by \cite{Schmeltz1983Breach/InletInlet.} has an initial size of 91.4 m and 0.61 m depth. This breach expanded to 885 m with a 3 m depth before it was closed by the US Army Corps of Engineers (USACE). The uncertainties in breach dimensions and  in where, how, and when breaches occur remains one of the many issues facing coastal communities today.
+
+Barrier islands exist along the coasts of 18 states that border the Atlantic Ocean and Gulf of Mexico \citep{Zhang2011}. As coastal populations have increased considerably over the last few decades, the protective nature of barrier islands have become even more important \citep{Zhang2011}. The National Hurricane Center (NHC) states that storm surge  is the largest contributor to life loss and property damage during hurricanes \citep{Center2006}. During a hurricane, storm surge induces flooding that can damage structures, close roads, and impact the lives of humans living in the coastal zone. Storm surge can also speed up erosion on both barrier islands and the mainland coast, which then can drive more flooding. Understanding how barrier island breaching affects coastal flooding from storm surge is important for risk assessment and mitigation efforts. The opening of a hydrodynamic connection between the ocean and the back-barrier region can lead to increased flooding and waves during hurricanes that increases the risk to populations and property. However, there is little information currently available on how different breach morphodynamics affect the mainland.
+
+In this paper, we explore a method of simulating barrier island breach in order to evaluate the impacts of storm surge induced breaching on mainland flooding. Using a storm modeling software, GeoClaw, we artificially alter the bathymetry of a barrier island to create a breach. This process provides a more controlled method of simulating breaching than using a sediment transport model. We remove the complexities involved in the sediment transport in order to purely study the mainland's flood response to a breach opening in random locations along the barrier island and at different times during the storm simulation. 
+
+\section{Methods}
+
+Our goal for this project is to quantify the differences in coastal and bay flooding if breaching occurs during a hurricane. To simulate the storm we are running simulations with GeoClaw a subsidiary of Clawpack, a suite of conservation law programs that solve hyperbolic differential equations in 1 and 2 dimensions to model geophysical events \citep{clawpack, mandli2016clawpack}. Clawpack employs adaptive mesh refinement (AMR) that allows for increasing resolution where and when it is needed and reduces the computational overhead while providing an accurate solution \citep{Berger2011TheRefinement}. GeoClaw calculates storm surge with a 2 dimensional depth averaged model that solves the classical shallow water equations with source terms for bathymetry, bottom friction, Coriolis forcing, surface pressure, and wind friction \citep{Mandli2014}. 
+
+Breaching is a complex process that is difficult to accurately model, the storm forcing, width of the island, sediment transport, and other complex processes are all involved that make it difficult to predict where and when a breach will occur. To accomplish our goal of quantifying flooding due to breaching we chose to simplify breaching by reducing the topography of the barrier island at specific locations. We simulate a breach using an approximation of a gaussian function to provide a breach with sloping sides and the deepest part in the center. During the storm simulation we apply \ref{eq:breach_gaussian} to reduce the height of the barrier island at a selected location, where $\mu$ is the center of the breach location, $d^t$ is the height of the breach location at time t, X is the longitude of the location being reduced and $t_T$ is a timing factor that controls how quickly the breach opens. The timing factor for these simulations allow for the breach to open fully in an hour after \citet{Visser1999}.
+\begin{equation}
+    d^t = d^{t-1} - e^{-\frac{1}{2}{(X - \mu)^2}}t_T
+    \label{eq:breach_gaussian}
+\end{equation}
+
+The storm we employ to simulate storm surge is a proxy for the 1938 New England hurricane. The storm data was generated for the US Army Corps of Engineers (USACE) North Atlantic Comprehensive Coast Survey (NACCS) \citep{cialone2015north}. The storm forcing is provided by wind and pressure fields that have data in 15 minute increments. Accurate modeling of this storm requires sub-minute data and AMR requires data to be integrated at increasing resolution where needed. To provide the sub-minute time steps we use linear interpolation of the wind and pressure fields, to define the wind and pressure forcing inside the AMR grids we employ bi-linear interpolation when and where it is required. The chosen storm has a similar track and intensity of the 1938 hurricane. We can verify the accuracy of the solution with a tide gauge at Sandy Hook, NJ that has data recorded from 1938, once adjustments are made for modern bathymetry and sea levels. The bathymetry we obtained for Moriches, NY is from NOAA's continuously updated 1/9 arc second topobathy dataset, for the basin we used GEBCO 30 arc second \citep{cires2014continuously, weatherall2015new}.
+
+The 1938 hurricane at Moriches, NY caused six breaches, three west of the inlet and three east of the inlet; quantifying the bay and coastal flooding changes during this hurricane requires that we vary the locations, timing, width, and depth of these breaches and recording the differences in synthetic tide gauges placed around the bay and recording maximum water levels in a large grid that is resolved to 18 meters. A no breach scenario provided the baselines we used for quantifying differences in breaching scenarios and verifying a breaching location is viable. We simulated synthetic tide gauges on the seaward side of the bay as a proxy for island inundation. Once a breach location is chosen we verify it is viable by taking the synthetic tide gauges within one km of the breach and calculate that the tide gauge reaches a minimum of 24\% of the dune height. If no gauges within one km reach that water height we choose a new location and start the test over. This allows for a reasonable estimate of the conditions that could induce breaching, if the water levels just offshore do not reach a critical height it is unlikely a breach would open at that location.
+
+We started with the original six breach dimensions as estimated from \citet{Canizares2008}, from there we created a monte-carlo framework that employs a random uniform distribution for both breach width and depth. For the first set of simulations we held the depth steady at -2.0 meters and varied the widths for each breach individually between 25 - 630 meters. Our second set of scenarios, we kept the original 1938 breach width estimations and varied the depths between 0 and -2.0 meters. The endpoints for each randomization was chosen from examples in the literature \citep{Schmeltz1983Breach/InletInlet., Kraus2003a,Visser1999, Canizares2008}. The time of initiation for each breach was chosen using the nearest synthetic tide gauge data from a no breach simulation; the first time in seconds the nearest tide gauge reaches 24\% of the maximum dune height at each location was our start time. We chose to have the breaches fully open within one hour after initiation.
+
+We evaluated our results using the maximum surge height data recorded by GeoClaw for the entire bay. Splitting the bay into 3 sections, east, central, and west, then comparing the varying width vs. depth simulations to identify if one parameter has more impact on bay flooding than another. Additionally, we calculated the change in wet vs. dry cells amongst the simulations and compared them to the original no breach simulation to quantify the area of inundation that occurs per scenario.
+% find a way to explain the single scenarios for volume of water through breach, or total breach area
+
+\section{Results}
+To analyse the results we looked at both surge height at random points in the bay and total inundation in square meters. For the randomly chosen locations we split the bay into thirds, for each section (west, central, east) we show  the mean of the surge height is higher for the depth variations, but the width scenarios have a larger variance. When varying both width and depth, the surge height is correlated to the number of breaches more than the mean breach area.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/dot_map.pdf}
+    \caption{Location of storm surge points (green) in Moriches, NY}
+    \label{fig1}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\input{images/west_central_east_hist.pgf}
+\caption{Storm Surge for points in Moriches, Bay}
+\label{fig2}
+\end{figure}
+
+Inundation differences are calculated from the number of 'wet' cells changed from a no breach scenario. Each cell is an 18x18 m square which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region.
+
+In figure 3 we show that the total breach dimensions have a relationship to the total area of inundation, with larger and more numerous breaches bringing more water inland. While there appears to be a stronger correlation to breach width and inundation than depth, breach depth is at least a factor of 20 smaller than total width for these scenarios.
+Figure 3 also shows that number of breaches is strongly correlated to total inundation area. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/inundation_x_total_breach_area.png}
+    \caption{Total breach area vs. Inundation}
+    \label{fig3}
+\end{figure}
+
+Figures 4-7 illustrate that different inundation patterns are correlated to number and size of breaches. Figure 4 is a no breach scenario which looks very similar in surge and inundation distribution to the minimum inundation which has only a single small breach. There are only approximately 500 different wet vs. dry cells between these two, which is 163,000 square meters or .1632 square kilometers of inundation. The scenario that comes closest to the mean of all the inundation is four moderate sized breaches, and the storm surge depths in the bay and inundation are very different than either the minimum or no breach scenarios. With higher flooding potential in the river drainages and along the lower elevation coastlines. Lastly the maximum inundation scenario shows all six breaches with very large areas, which merges two of the breaches on the eastern side of the inlet. This scenario again shows further flooding in the river drainages and along the coastline, although at the bay scale it is more challenging to differentiate from the mean.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/Nobreach.pdf}
+    \caption{Map of storm surge for a no breach scenario}
+    \label{fig4}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/min_inundation.pdf}
+    \caption{Map of storm surge for the minimum inundation}
+    \label{fig5}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/mean_inundation.pdf}
+    \caption{Map of storm surge for the mean inundation}
+    \label{fig6}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/max_inundation.pdf}
+    \caption{Map of storm surge for a max inundation}
+    \label{fig7}
+\end{figure}
+% Discuss here about total number of breaches and breach locations varying when that data is analyzed.
+
+% Highlite fgmax overlay in google earth to show where shoring up regions that are always inundated.
+% Discuss depth of inundation on potential impacts like electrical lines
+
+\section{Discussion}
+Figure 3 illustrates that total breach area in the island is the strongest determining factor in higher mainland inundation. The depth variations show a higher mean inundation area due to some of the original breaches being very large, on the order to 20-100 times wider than the total depth. Single small breaches have less inundation potential than multiple small breaches or many breaches of mixed total area. Total width runs from 25 - 630 meters whereas total depth goes from 0 to -2.0 meters. 
+Changing the locations of the breaches adn varying the number of breaches allowed to be the total number of viable sites on the island (around 295) shows...% Analyse the new simulations
+
+\section{Conclusions}
+Breaching of a barrier island during a hurricane shows a strong impact on mainland inundation. The number/(location?)/ and size of the breaches can change the inundation potential.
+
+Future work: Run many (1000s) more simulations to be able to get a full distribution of data from depth/width breaching differences. Run more storms to show impacts from different approaches, storm sizes, storm structure (extratropical like Sandy?), storm speeds to perform the same analysis and gain a better understanding of breaching impacts. Do storms
+
+\bibliography{ref}
 
 \end{document}
