@@ -1,6 +1,6 @@
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/dot_map.pdf}
+    \includegraphics[width=0.75\textwidth]{dot_map.pdf}
     \caption{Map of Moriches Bay, NY. Orange circles indicate locations of synthetic tide gauges. Teal circles indicate locations of surge data}
     \label{fig1}
 \end{figure}
@@ -9,9 +9,9 @@
 \begin{figure}[ht]
 \centering
 \resizebox{\textwidth}{!}{%
-        \input{../../BarrierBreach/visualization/west_central_east_surge.pgf}
+        \input{west_central_east_surge.pgf}
     }
-\caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying both width, depth and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, number of breaches up to 295 breaches and varying locations of the breaches (315)}
+\caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
 \label{fig2}
 \end{figure}
 \efloatseparator
@@ -70,17 +70,9 @@
 \end{figure}
 \efloatseparator
  
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png}
-    \caption{Total breach area ($km^2$) vs. total inundation change from no breach ($km^2$) for 1500 simulations with the differing randomizations as discussed in the methods}
-    \label{fig5}
-\end{figure}
-\efloatseparator
- 
 \begin{figure}
     \centering
-    \includegraphics[width=0.85\textwidth]{../../BarrierBreach/visualization/min_max_mean_inundation.png}
+    \includegraphics[width=0.85\textwidth]{min_max_mean_inundation.pdf}
     \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
     \label{fig6}
 \end{figure}

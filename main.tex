@@ -84,7 +84,7 @@ We evaluated our results using the maximum surge height data recorded by GeoClaw
 To analyse the results we looked at both surge height at random points in the bay and total inundation in square meters. Figure 1 illustrates the locations of each chosen storm surge point and the locations of the synthetic tide gauges for each section of the bay.
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/dot_map.pdf}
+    \includegraphics[width=0.75\textwidth]{dot_map.pdf}
     \caption{Map of Moriches Bay, NY. Orange circles indicate locations of synthetic tide gauges. Teal circles indicate locations of surge data}
     \label{fig1}
 \end{figure}
@@ -97,7 +97,7 @@ Figure 3 illustrates the relationship between total breach area ($km^2$) and tot
 \begin{figure}[ht]
 \centering
 \resizebox{\textwidth}{!}{%
-        \input{../../BarrierBreach/visualization/west_central_east_surge.pgf}
+        \input{west_central_east_surge.pgf}
     }
 \caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
 \label{fig2}
@@ -160,18 +160,12 @@ Figure 3 also shows that number of breaches is strongly correlated to total inun
 \caption{ Total breach area ($km^2$) vs. total change in inundation from no breach. Zoomed in from fig 3, to show small variations in breach size and inundation}
 \end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png}
-    \caption{Total breach area ($km^2$) vs. total inundation change from no breach ($km^2$) for 1500 simulations with the differing randomizations as discussed in the methods}
-    \label{fig5}
-\end{figure}
 
 Figures 6 illustrate that different inundation patterns are correlated to number and size of breaches. Figure 4 is a no breach scenario which looks very similar in surge and inundation distribution to the minimum inundation which has only a single small breach. There are only approximately 500 different wet vs. dry cells between these two, which is 163,000 square meters or .1632 square kilometers of inundation. The scenario that comes closest to the mean of all the inundation is four moderate sized breaches, and the storm surge depths in the bay and inundation are very different than either the minimum or no breach scenarios. With higher flooding potential in the river drainages and along the lower elevation coastlines. Lastly the maximum inundation scenario shows all six breaches with very large areas, which merges two of the breaches on the eastern side of the inlet. This scenario again shows further flooding in the river drainages and along the coastline, although at the bay scale it is more challenging to differentiate from the mean.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.85\textwidth]{../../BarrierBreach/visualization/min_max_mean_inundation.png}
+    \includegraphics[width=0.85\textwidth]{min_max_mean_inundation.pdf}
     \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
     \label{fig6}
 \end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  18 APR 2023 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  24 APR 2023 10:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,7 +963,7 @@ File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 ) [7] [8] [9]
 \openout3 = `main.fff'.
 
- (main.fff) [10] [11] [12] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl
+ (main.fff) [10] [11] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl [12]
 LaTeX Font Info:    Trying to load font information for T1+cmtl on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
@@ -1044,13 +1044,13 @@ Underfull \hbox (badness 2503) in paragraph at lines 161--170
 
 [15]) AED endfloat: Processing end Figures and Tables [16] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff
 
-pdfTeX warning: pdflatex (file ../../BarrierBreach/visualization/dot_map.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../../BarrierBreach/visualization/dot_map.pdf, id=66, 657.15514pt x 392.16513pt>
-File: ../../BarrierBreach/visualization/dot_map.pdf Graphic file (type pdf)
-<use ../../BarrierBreach/visualization/dot_map.pdf>
-Package pdftex.def Info: ../../BarrierBreach/visualization/dot_map.pdf  used on input line 3.
+pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<dot_map.pdf, id=66, 657.15514pt x 392.16513pt>
+File: dot_map.pdf Graphic file (type pdf)
+<use dot_map.pdf>
+Package pdftex.def Info: dot_map.pdf  used on input line 3.
 (pdftex.def)             Requested size: 352.31625pt x 210.25208pt.
-[17 <../../BarrierBreach/visualization/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/../../BarrierBreach/visualization/west_central_east_surge.pgf) [18
+[17 </home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/west_central_east_surge.pgf) [18
 
 
 
@@ -1131,41 +1131,34 @@ Package pgfplots Warning: Table '1_breaches.csv' has an empty column name; repla
 
  [warning /pgfplots/warning/empty column name]
 [20]
-<../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png, id=91, 426.6339pt x 316.3017pt>
-File: ../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png Graphic file (type png)
-<use ../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png>
-Package pdftex.def Info: ../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png  used on input line 75.
-(pdftex.def)             Requested size: 352.31625pt x 261.20792pt.
- [21
 
-
- <../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png>]
-<../../BarrierBreach/visualization/min_max_mean_inundation.png, id=97, 743.1765pt x 460.8417pt>
-File: ../../BarrierBreach/visualization/min_max_mean_inundation.png Graphic file (type png)
-<use ../../BarrierBreach/visualization/min_max_mean_inundation.png>
-Package pdftex.def Info: ../../BarrierBreach/visualization/min_max_mean_inundation.png  used on input line 83.
-(pdftex.def)             Requested size: 399.29463pt x 247.60617pt.
-) [22 <../../BarrierBreach/visualization/min_max_mean_inundation.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<min_max_mean_inundation.pdf, id=91, 743.07611pt x 460.92201pt>
+File: min_max_mean_inundation.pdf Graphic file (type pdf)
+<use min_max_mean_inundation.pdf>
+Package pdftex.def Info: min_max_mean_inundation.pdf  used on input line 75.
+(pdftex.def)             Requested size: 399.29463pt x 247.67744pt.
+) [21 </home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
  (/home/catherinej/BreachPaper/BarrierBreachPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 28299 strings out of 481239
- 719130 string characters out of 5920377
- 1756195 words of memory out of 5000000
- 43065 multiletter control sequences out of 15000+600000
+ 28289 strings out of 481239
+ 718133 string characters out of 5920377
+ 1756152 words of memory out of 5000000
+ 43059 multiletter control sequences out of 15000+600000
  578073 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,115p,1921b,2654s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbtl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (22 pages, 2413144 bytes).
+Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (21 pages, 2092129 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
