@@ -1,6 +1,7 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{pgfplots}
+\usepackage{helvet}
 \usetikzlibrary{external}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colorbrewer}
@@ -11,10 +12,10 @@
     legend style={draw=none, font=\tiny},
     legend cell align=left,
     legend pos=south east,
-    ylabel style={align=center, font=\bfseries\boldmath},
-    xlabel style={align=center, font=\bfseries\boldmath},
-    x tick label style={font=\bfseries\boldmath},
-    y tick label style={font=\bfseries\boldmath},
+    ylabel style={align=center, font=\sffamily\boldmath},
+    xlabel style={align=center, font=\sffamily\boldmath},
+    x tick label style={font=\sffamily\boldmath, align=center},
+    y tick label style={font=\sffamily\boldmath, align=center},
     scaled ticks=false,
     every axis plot/.append style={thick},
     },
@@ -26,8 +27,8 @@
     cycle list/Dark2,
     myplotstyle,
     table/col sep=comma,
-    ylabel={Total inundation ($m^2$)},
-    xlabel={Total breach area ($m^2$)}]
+    ylabel={Total inundation ($km^2$)},
+    xlabel={Total breach area ($km^2$)}]
     \addplot+[only marks]table[x=total_breach_area, y=diff_no_breach, col sep=comma]{data/width_wet_cells.csv};
     \addlegendentry{Vary width simulations}
     \addplot+[only marks] table[x=total_breach_area, y=diff_no_breach, col sep=comma]{data/depth_wet_cells.csv};
@@ -38,35 +39,47 @@
 \end{tikzpicture}
 
 \begin{tikzpicture}
-\begin{axis}[
-    width=\linewidth,
-    height=8cm,
-    xlabel={Value},
-    ylabel={Frequency},
-    xmin=0.6,
-    xmax=1.2,
-    ymin=0,
-    ymax=175,
-    ybar interval,
-    xtick distance=0.04
-    xticklabel style={rotate=45, anchor=near xticklabel},
-    xtick align=inside,
-    ytick align=inside,
-    axis on top,
-    major tick style={draw=none},
-    minor tick style={draw=none},
-    grid=major,
-    bar width=0.025\textwidth,
-    enlarge x limits=false,
-    clip=false,
-    legend pos=north east,
-    legend cell align=left,
-]
-\input{east_2.pgf}
-% \foreach \i in {west, east,central} {
-%   \addplot+[hist={bins=20,data min=0.4,data max=1.5}] table [y index=0] {data/\i_0.csv};
-
-
-\end{axis}
+    \begin{axis}
+        [cycle list/Dark2,
+        myplotstyle,
+        table/col sep=comma,
+        ylabel={Inundation area ($km^2$) \\ changes from no breach},
+        xlabel={Total breach area ($km^2$)},
+        legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+        xtick={0,0.01,..., 0.1},
+        xticklabels={},
+        extra x ticks={0, 0.02,0.04, 0.06, 0.08, 0.1},
+        extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$}]
+        \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
+            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../\i_breaches.csv};
+            }
+        
+    \end{axis}
 \end{tikzpicture}
+
+\begin{tikzpicture}
+    \begin{axis}
+        [cycle list/Dark2,
+        myplotstyle,
+        table/col sep=comma,
+        ylabel={Inundation area ($km^2$) \\ changes from no breach},
+        xlabel={Total breach area ($km^2$)},
+        legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+        xtick={0,0.00075,0.0015,...,0.075},
+        xtick distance={0.00075},
+        xticklabels={},
+        xmin=0,
+        xmax=0.0075,
+        ymin=0,
+        ymax=25,
+        extra x ticks={0, 0.0015,0.0045,0.0075}, 
+        extra x tick labels={$0$,$0.0015$, $0.0045$,   $0.0075$}
+        ]
+        \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
+            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../\i_breaches.csv};
+            }
+        
+    \end{axis}
+\end{tikzpicture}
+
 \end{document}

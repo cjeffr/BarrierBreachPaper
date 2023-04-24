@@ -1,0 +1,86 @@
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/dot_map.pdf}
+    \caption{Map of Moriches Bay, NY. Orange circles indicate locations of synthetic tide gauges. Teal circles indicate locations of surge data}
+    \label{fig1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+        \input{../../BarrierBreach/visualization/west_central_east_surge.pgf}
+    }
+\caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying both width, depth and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, number of breaches up to 295 breaches and varying locations of the breaches (315)}
+\label{fig2}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}
+            [cycle list/Dark2,
+            myplotstyle,
+            table/col sep=comma,
+            ylabel={Inundation area ($km^2$) \\ changes from no breach},
+            xlabel={Total breach area ($km^2$)},
+            legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+            xtick={0,0.01,..., 0.1},
+            xticklabels={},
+            extra x ticks={0, 0.02,0.04, 0.06, 0.08, 0.1},
+            extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$}]
+            \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
+                \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{\i_breaches.csv};
+                }
+
+        \end{axis}
+\end{tikzpicture}
+\label{fig3}
+\caption{Total breach area ($km^2$) vs. Total change in inundation from a no breach scneario. Colors are organized by number of breaches}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+    \begin{tikzpicture}
+        \begin{axis}
+            [cycle list/Dark2,
+            myplotstyle,
+            table/col sep=comma,
+            ylabel={Inundation area ($km^2$) \\ changes from no breach},
+            xlabel={Total breach area ($km^2$)},
+            legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+            xtick={0,0.00075,0.0015,...,0.075},
+            xtick distance={0.00075},
+            xticklabels={},
+            xmin=0,
+            xmax=0.0075,
+            ymin=0,
+            ymax=25,
+            extra x ticks={0, 0.0015,0.0045,0.0075},
+            extra x tick labels={$0$,$0.0015$, $0.0045$,   $0.0075$}
+            ]
+            \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
+                \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{\i_breaches.csv};
+                }
+        \end{axis}
+    \end{tikzpicture}
+\label{fig4}
+\caption{ Total breach area ($km^2$) vs. total change in inundation from no breach. Zoomed in from fig 3, to show small variations in breach size and inundation}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/inundation_x_total_breach_area_one_color.png}
+    \caption{Total breach area ($km^2$) vs. total inundation change from no breach ($km^2$) for 1500 simulations with the differing randomizations as discussed in the methods}
+    \label{fig5}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{../../BarrierBreach/visualization/min_max_mean_inundation.png}
+    \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
+    \label{fig6}
+\end{figure}
