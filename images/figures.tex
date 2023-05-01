@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{pgfplots}
 \usepackage{helvet}
+\usepackage{subfigure}
 \usetikzlibrary{external}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colorbrewer}
@@ -38,48 +39,191 @@
 \end{axis}
 \end{tikzpicture}
 
-\begin{tikzpicture}
+\begin{figure}
+\subfigure[]
+{
+\begin{tikzpicture}[scale=0.75]
     \begin{axis}
         [cycle list/Dark2,
         myplotstyle,
         table/col sep=comma,
         ylabel={Inundation area ($km^2$) \\ changes from no breach},
         xlabel={Total breach area ($km^2$)},
-        legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+        legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},
         xtick={0,0.01,..., 0.1},
         xticklabels={},
         extra x ticks={0, 0.02,0.04, 0.06, 0.08, 0.1},
-        extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$}]
-        \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
-            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../\i_breaches.csv};
+        extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$},
+        legend style={at={(.95,.05)},
+                        nodes={scale=0.35, transform shape},                    
+                        anchor=south east,                       
+                        draw=black,                      
+                        fill=white,                      
+                        font=\footnotesize,                      
+                        cells={anchor=west},                      
+                        rounded corners=2pt,
+                               }]
+        \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
+            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../data/\i_surge.csv};
             }
-        
     \end{axis}
 \end{tikzpicture}
-
-\begin{tikzpicture}
+}
+\hspace{.5cm}
+\subfigure[]
+{
+\begin{tikzpicture}[scale=0.75]
     \begin{axis}
-        [cycle list/Dark2,
-        myplotstyle,
-        table/col sep=comma,
-        ylabel={Inundation area ($km^2$) \\ changes from no breach},
-        xlabel={Total breach area ($km^2$)},
-        legend entries={$>$ 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach},
-        xtick={0,0.00075,0.0015,...,0.075},
-        xtick distance={0.00075},
-        xticklabels={},
-        xmin=0,
-        xmax=0.0075,
-        ymin=0,
-        ymax=25,
-        extra x ticks={0, 0.0015,0.0045,0.0075}, 
-        extra x tick labels={$0$,$0.0015$, $0.0045$,   $0.0075$}
-        ]
-        \foreach \i in {gt_6, 6, 5, 4, 3, 2, 1}{
-            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../\i_breaches.csv};
-            }
+        [cycle list/Dark2,       
+         myplotstyle,        
+         table/col sep=comma,        
+        %  ylabel={Inundation area ($km^2$) \\ changes from no breach},        
+         xlabel={Total breach area ($km^2$)},  
+         legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},    
+         xtick={0,0.00075,0.0015,...,0.075},
+         xtick distance={0.00075},        
+         xticklabels={},        
+         xmin=0,
+         xmax=0.0075,
+         ymin=0,
+         ymax=25,
+         extra x ticks={0, 0.0015,0.0045,0.0075},
+         extra x tick labels={$0$,$0.0015$, $0.0045$, $0.0075$},      
+         legend columns=1,        
+         legend style={at={(.95,.05)},
+                        nodes={scale=0.35, transform shape},                    
+                        anchor=south east,                       
+                        draw=black,                      
+                        fill=white,                      
+                        font=\footnotesize,                      
+                        cells={anchor=west},                      
+                        rounded corners=2pt,
+                               }]
         
+        \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
+        \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{../data/\i_surge.csv};
+        }
+
     \end{axis}
-\end{tikzpicture}
+\end{tikzpicture}}
+\end{figure}
+
+
+
+% \begin{tikzpicture}
+% \begin{axis}[
+%     xlabel={Total breach area ($km^2$)},
+%     ylabel={Inundation area ($km^2$) \\ changes from no breach},
+%     xmin=0, xmax=0.0075,
+%     ymin=0, ymax=25,
+%     xtick={0,0.00075,0.0015,...,0.075},
+%     xtick distance={0.00075},
+%     xticklabels={},
+%     legend pos=north east,
+%     scatter/classes={
+%         gt_6={Dark2-1},
+%         6={Dark2-2},
+%         5={Dark2-3},
+%         4={Dark2-4},
+%         3={Dark2-5},
+%         2={Dark2-6},
+%         1={Dark2-7}
+%     }
+% ]
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/gt_6_breaches.csv};
+    
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/6_breaches.csv};
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/5_breaches.csv};
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/4_breaches.csv};
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/3_breaches.csv};
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/2_breaches.csv};
+
+% \addplot[
+%     scatter,only marks,
+%     scatter src=explicit symbolic,
+%     mark size=1.5,
+%     ]
+%     table[
+%         x=breach_area,
+%         y=inundation,
+%         col sep=comma,
+%         meta=class
+%     ]
+%     {../data/1_breaches.csv};
+
+% \legend{> 6 breaches, 6 breaches, 5 breaches, 4 breaches, 3 breaches, 2 breaches, 1 breach}
+% \end{axis}
+% \end{tikzpicture}
 
 \end{document}
