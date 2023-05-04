@@ -135,10 +135,11 @@ Figure 3a illustrates the relationship between total breach area ($km^2$) and to
                 \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{data/\i_surge.csv};
                 }
         \end{axis}
-    \end{tikzpicture}
-    }
-\caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying both width, depth and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, number of breaches up to 295 breaches and varying locations of the breaches (315)}
-\label{fig2}
+
+\end{tikzpicture}
+\label{fig3}
+\caption{Total breach area ($km^2$) vs. Total change in inundation from a no breach scenario. Colors are organized by number of breaches}
+
 \end{figure}
 
 Inundation differences are calculated from the number of 'wet' cells changed from a no breach scenario. Each cell is an 18x18 meters squared which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region.
@@ -193,11 +194,14 @@ Figure 3 also shows that number of breaches is strongly correlated to total inun
     \caption{ a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
     \end{figure}
 
+
 Figure 4 shows the differences between two simulations with the a similar total breach area, however the total inundation is very different. Figure 4a, shows a scenario with six breaches in the locations that occurred during the 1938 hurricane, the total breach area is .0039 $km^2$, and total inundation is 10.44 $km^2$. Figure 4b, has a smaller breach area at .0036 $km^2$ but a larger inundation at 12.03 $km^2$.
+
 
 \begin{figure}
     \centering
     \includegraphics[width=0.85\textwidth]{min_max_mean_inundation.pdf}
+
     \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
     \label{fig4}
 \end{figure}
