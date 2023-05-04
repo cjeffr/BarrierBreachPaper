@@ -1,0 +1,106 @@
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{dot_map.pdf}
+    \caption{Map of Moriches Bay, NY. Orange circles indicate locations of synthetic tide gauges. Teal circles indicate locations of surge data}
+    \label{fig1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[ht]
+    \centering
+    \resizebox{\textwidth}{!}{%
+            \input{west_central_east_surge.pgf}
+        }
+    \caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
+    \label{fig2}
+    \end{figure}
+
+Figure 3a illustrates the relationship between total breach area ($km^2$) and total inundation change from a no breach simulation. The relationship starts with a minimum inundation of .1632 $km^2$ and illustrates that more breach area leads to more inundation to a point, around 75 possible breaches the curve levels off at a total breach area of .035 $km^2$ and an inundation change around 40.1 square kilometers. Inundation change grows more slowly beyond this point to a maximum total inundation of 49.06 $km^2$. Figure 3b zooms in on an the initial curve of simualations with under 20 breaches.
+
+\begin{figure}[ht]
+    \subfigure[]
+    {
+    \begin{tikzpicture}[scale=0.95]
+        \begin{axis}
+            [cycle list/Dark2,
+            myplotstyle,
+            table/col sep=comma,
+            ylabel={Inundation area ($km^2$) \\ changes from no breach},
+            xlabel={Total breach area ($km^2$)},
+            legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+            xtick={0,0.01,..., 0.1},
+            xticklabels={},
+            extra x ticks={0, 0.02,0.04, 0.06, 0.08, 0.1},
+            extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$},
+            legend style={at={(.95,.05)},
+                            nodes={scale=0.35, transform shape},
+                            anchor=south east,
+                            draw=black,
+                            fill=white,
+                            font=\footnotesize,
+                            cells={anchor=west},
+                            rounded corners=2pt,
+                                   }]
+            \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
+                \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{data/\i_surge.csv};
+                }
+        \end{axis}
+    \end{tikzpicture}
+    }
+    \hspace{.5cm}
+    \subfigure[]
+    {
+    \begin{tikzpicture}[scale=0.95]
+        \begin{axis}
+            [cycle list/Dark2,
+             myplotstyle,
+             table/col sep=comma,
+            %  ylabel={Inundation area ($km^2$) \\ changes from no breach},
+             xlabel={Total breach area ($km^2$)},
+             legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},
+             xtick={0,0.00075,0.0015,...,0.075},
+             xtick distance={0.00075},
+             xticklabels={},
+             xmin=0,
+             xmax=0.0075,
+             ymin=0,
+             ymax=25,
+             extra x ticks={0, 0.0015,0.0045,0.0075},
+             extra x tick labels={$0$,$0.0015$, $0.0045$, $0.0075$},
+             legend columns=1,
+             legend style={at={(.95,.05)},
+                            nodes={scale=0.35, transform shape},
+                            anchor=south east,
+                            draw=black,
+                            fill=white,
+                            font=\footnotesize,
+                            cells={anchor=west},
+                            rounded corners=2pt,
+                                   }]
+
+            \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
+            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{data/\i_surge.csv};
+            }
+
+        \end{axis}
+    \end{tikzpicture}}
+    \label{fig3}
+    \caption{ a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
+    \end{figure}
+
+Figure 4 shows the differences between two simulations with the a similar total breach area, however the total inundation is very different. Figure 4a, shows a scenario with six breaches in the locations that occurred during the 1938 hurricane, the total breach area is .0039 $km^2$, and total inundation is 10.44 $km^2$. Figure 4b, has a smaller breach area at .0036 $km^2$ but a larger inundation at 12.03 $km^2$.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\textwidth]{min_max_mean_inundation.pdf}
+    \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
+    \label{fig4}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{6_vs_11_breaches.pdf}
+    \caption{a) maximum surge and inundation for simulation that has 11 breaches and a total area of .036 $km^2$. b) maximum surge and inundation for simulations with 6 breaches and .039 $km^2$}
+    \label{fig5}
+\end{figure}
