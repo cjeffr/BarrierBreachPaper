@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  24 APR 2023 10:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  3 MAY 2023 20:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,7 +849,26 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip58
+\subfigcapskip=\skip59
+\subfigcaptopadj=\dimen284
+\subfigbottomskip=\skip60
+\subfigcapmargin=\dimen285
+\subfiglabelskip=\skip61
+\c@subfigure=\count299
+\c@lofdepth=\count300
+\c@subtable=\count301
+\c@lotdepth=\count302
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip62
+\subfig@bottom=\skip63
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
@@ -864,46 +883,46 @@ Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.statistics.code.tex) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count299
+\l__kernel_color_stack_int=\count303
 \l__pdf_internal_box=\box61
 ) (/home/catherinej/BreachPaper/BarrierBreachPaper/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 35.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 34.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 35.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
-\scratchdimen=\dimen284
+\scratchcounter=\count304
+\scratchdimen=\dimen286
 \scratchbox=\box62
-\nofMPsegments=\count301
-\nofMParguments=\count302
+\nofMPsegments=\count305
+\nofMParguments=\count306
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count303
-\MPscratchDim=\dimen285
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen287
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
 \everyMPtoPDFconversion=\toks44
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -952,18 +971,22 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 64.
-LaTeX Font Info:    Trying to load font information for OML+cmbrm on input line 64.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 65.
+LaTeX Font Info:    Trying to load font information for OML+cmbrm on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
 File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmbrs on input line 64.
+LaTeX Font Info:    Trying to load font information for OMS+cmbrs on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/omscmbrs.fd
 File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
-) [7] [8] [9]
+) [7] [8]
+
+Package natbib Warning: Citation `NACCS' on page 9 undefined on input line 78.
+
+[9]
 \openout3 = `main.fff'.
 
- (main.fff) [10] [11] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl [12]
+ (main.fff) [10] [11] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtl on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
@@ -982,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--23
 \T1/cmtl/m/n/12 Library/Files/69/69E24870-C44F-49FD-BB3E-73EF76EEBE02.pdf
  []
 
-
+[12]
 Underfull \hbox (badness 6380) in paragraph at lines 32--40
 []\T1/phv/m/n/12 R. Cañizares and J. L. Irish.  Sim-u-la-tion of storm-induced bar-rier is-land
  []
@@ -1042,7 +1065,11 @@ Underfull \hbox (badness 2503) in paragraph at lines 161--170
 \T1/phv/m/n/12 106404, 2019.  ISSN 02727714.  doi: 10.1016/j.ecss.2019.106404.  URL
  []
 
-[15]) AED endfloat: Processing end Figures and Tables [16] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff
+[15])
+
+Package natbib Warning: There were undefined citations.
+
+AED endfloat: Processing end Figures and Tables [16] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff
 
 pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <dot_map.pdf, id=66, 657.15514pt x 392.16513pt>
@@ -1050,115 +1077,178 @@ File: dot_map.pdf Graphic file (type pdf)
 <use dot_map.pdf>
 Package pdftex.def Info: dot_map.pdf  used on input line 3.
 (pdftex.def)             Requested size: 352.31625pt x 210.25208pt.
-[17 </home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/west_central_east_surge.pgf) [18
+[17 </home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/west_central_east_surge.pgf)
+PGFPlots: reading {data/100-294_surge.csv}
 
 
-
-]
-PGFPlots: reading {gt_6_breaches.csv}
-
-
-Package pgfplots Warning: Table 'gt_6_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
+Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {6_breaches.csv}
+PGFPlots: reading {data/51-100_surge.csv}
 
-Package pgfplots Warning: Table '6_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {5_breaches.csv}
-
-Package pgfplots Warning: Table '5_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
+Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {4_breaches.csv}
+PGFPlots: reading {data/21-50_surge.csv}
 
-Package pgfplots Warning: Table '4_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {3_breaches.csv}
-
-Package pgfplots Warning: Table '3_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
+Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {2_breaches.csv}
+PGFPlots: reading {data/16-20_surge.csv}
 
-Package pgfplots Warning: Table '2_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {1_breaches.csv}
-
-Package pgfplots Warning: Table '1_breaches.csv' has an empty column name; replacing it by '0'' on input line 35.
+Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-[19
+PGFPlots: reading {data/11-15_surge.csv}
 
-]
-PGFPlots: reading {gt_6_breaches.csv}
-
-
-Package pgfplots Warning: Table 'gt_6_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
+Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {6_breaches.csv}
+PGFPlots: reading {data/7-10_surge.csv}
 
-Package pgfplots Warning: Table '6_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {5_breaches.csv}
-
-Package pgfplots Warning: Table '5_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
+Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {4_breaches.csv}
+PGFPlots: reading {data/6_surge.csv}
 
-Package pgfplots Warning: Table '4_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {3_breaches.csv}
-
-Package pgfplots Warning: Table '3_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
+Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {2_breaches.csv}
+PGFPlots: reading {data/5_surge.csv}
 
-Package pgfplots Warning: Table '2_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {1_breaches.csv}
-
-Package pgfplots Warning: Table '1_breaches.csv' has an empty column name; replacing it by '0'' on input line 65.
+Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
-[20]
+PGFPlots: reading {data/4_surge.csv}
+
+Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/3_surge.csv}
+
+Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/2_surge.csv}
+
+Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/1_surge.csv}
+
+Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/100-294_surge.csv}
+
+Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/51-100_surge.csv}
+
+Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/21-50_surge.csv}
+
+Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/16-20_surge.csv}
+
+Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/11-15_surge.csv}
+
+Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/7-10_surge.csv}
+
+Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/6_surge.csv}
+
+Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/5_surge.csv}
+
+Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/4_surge.csv}
+
+Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/3_surge.csv}
+
+Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/2_surge.csv}
+
+Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {data/1_surge.csv}
+
+Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
+
+ [warning /pgfplots/warning/empty column name]
+
+Overfull \hbox (23.89175pt too wide) in paragraph at lines 49--88
+[][]   []
+ []
+
+
 
 pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<min_max_mean_inundation.pdf, id=91, 743.07611pt x 460.92201pt>
+<min_max_mean_inundation.pdf, id=80, 743.07611pt x 460.92201pt>
 File: min_max_mean_inundation.pdf Graphic file (type pdf)
 <use min_max_mean_inundation.pdf>
-Package pdftex.def Info: min_max_mean_inundation.pdf  used on input line 75.
+Package pdftex.def Info: min_max_mean_inundation.pdf  used on input line 95.
 (pdftex.def)             Requested size: 399.29463pt x 247.67744pt.
-) [21 </home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+[18
+
+
+
+]
+
+LaTeX Warning: Text page 19 contains only floats.
+
+[19 </home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf>]
+
+pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/6_vs_11_breaches.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<6_vs_11_breaches.pdf, id=107, 920.5391pt x 296.307pt>
+File: 6_vs_11_breaches.pdf Graphic file (type pdf)
+<use 6_vs_11_breaches.pdf>
+Package pdftex.def Info: 6_vs_11_breaches.pdf  used on input line 103.
+(pdftex.def)             Requested size: 352.31625pt x 113.4026pt.
+) [20 </home/catherinej/BreachPaper/BarrierBreachPaper/6_vs_11_breaches.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
  (/home/catherinej/BreachPaper/BarrierBreachPaper/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 189.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
  ) 
 Here is how much of TeX's memory you used:
- 28289 strings out of 481239
- 718133 string characters out of 5920377
- 1756152 words of memory out of 5000000
- 43059 multiletter control sequences out of 15000+600000
- 578073 words of font info for 78 fonts, out of 8000000 for 9000
+ 28460 strings out of 481239
+ 720490 string characters out of 5920377
+ 2207063 words of memory out of 5000000
+ 43211 multiletter control sequences out of 15000+600000
+ 580803 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,115p,1921b,2654s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,21n,119p,1921b,2716s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbtl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (21 pages, 2092129 bytes).
+Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (20 pages, 2962833 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

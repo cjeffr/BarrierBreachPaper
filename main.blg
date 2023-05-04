@@ -3,6 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: ref.bib
+Warning--I didn't find a database entry for "NACCS"
 Warning--empty publisher in KRAUS2005
 Warning--there's a number but no volume in Kraus2003a
 Warning--there's a number but no volume in Stutz2001ADistribution
@@ -10,7 +11,7 @@ Warning--empty publisher in Visser1999
 Warning--there's a number but no volume in Wamsley2005CoastalClosure
 You've used 24 entries,
             2773 wiz_defined-function locations,
-            804 strings with 10132 characters,
+            806 strings with 10142 characters,
 and the built_in function-call counts, 12239 in all, are:
 = -- 1143
 > -- 731
@@ -49,4 +50,4 @@ warning$ -- 5
 while$ -- 108
 width$ -- 0
 write$ -- 376
-(There were 5 warnings)
+(There were 6 warnings)
