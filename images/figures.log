@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  1 MAY 2023 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  1 MAY 2023 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -356,180 +356,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.16} (current compat level: 1.9).
 
-PGFPlots: reading {data/width_wet_cells.csv}
+PGFPlots: reading {../data/depth_gauge0011_east.csv}
+Runaway argument?
+{{;2Y1.9999722222222207e0],1Y1.653031e-2],}{;2Y1.9998055555555523e0],\ETC.
+/home/catherinej/BreachPaper/BarrierBreachPaper/images/figures.tex:118: TeX capacity exceeded, sorry [main memory size=5000000].
+\pgfplots@glob@TMPa ...;2Y1.6863055555555588e\ETC.
+                                                  
+l.118 ...comma]{../data/depth_gauge0011_east.csv};
+                                                  
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
 
-Package pgfplots Warning: Table 'data/width_wet_cells.csv' has an empty column name; replacing it by '0'' on input line 33.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {data/depth_wet_cells.csv}
-
-Package pgfplots Warning: Table 'data/depth_wet_cells.csv' has an empty column name; replacing it by '0'' on input line 35.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {data/width_depth_wet_cells.csv}
-
-Package pgfplots Warning: Table 'data/width_depth_wet_cells.csv' has an empty column name; replacing it by '0'' on input line 37.
-
- [warning /pgfplots/warning/empty column name]
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 39.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 39.
-PGFPlots: reading {../data/100-294_surge.csv}
-
-
-Package pgfplots Warning: Table '../data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/51-100_surge.csv}
-
-Package pgfplots Warning: Table '../data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/21-50_surge.csv}
-
-Package pgfplots Warning: Table '../data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/16-20_surge.csv}
-
-Package pgfplots Warning: Table '../data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/11-15_surge.csv}
-
-Package pgfplots Warning: Table '../data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/7-10_surge.csv}
-
-Package pgfplots Warning: Table '../data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/6_surge.csv}
-
-Package pgfplots Warning: Table '../data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/5_surge.csv}
-
-Package pgfplots Warning: Table '../data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/4_surge.csv}
-
-Package pgfplots Warning: Table '../data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/3_surge.csv}
-
-Package pgfplots Warning: Table '../data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/2_surge.csv}
-
-Package pgfplots Warning: Table '../data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/1_surge.csv}
-
-Package pgfplots Warning: Table '../data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 71.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/100-294_surge.csv}
-
-Package pgfplots Warning: Table '../data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/51-100_surge.csv}
-
-Package pgfplots Warning: Table '../data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/21-50_surge.csv}
-
-Package pgfplots Warning: Table '../data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/16-20_surge.csv}
-
-Package pgfplots Warning: Table '../data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/11-15_surge.csv}
-
-Package pgfplots Warning: Table '../data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/7-10_surge.csv}
-
-Package pgfplots Warning: Table '../data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/6_surge.csv}
-
-Package pgfplots Warning: Table '../data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/5_surge.csv}
-
-Package pgfplots Warning: Table '../data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/4_surge.csv}
-
-Package pgfplots Warning: Table '../data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/3_surge.csv}
-
-Package pgfplots Warning: Table '../data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/2_surge.csv}
-
-Package pgfplots Warning: Table '../data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {../data/1_surge.csv}
-
-Package pgfplots Warning: Table '../data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 108.
-
- [warning /pgfplots/warning/empty column name]
-
-Overfull \hbox (9.2073pt too wide) in paragraph at lines 71--109
-[][]   []
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
- (/home/catherinej/BreachPaper/BarrierBreachPaper/images/figures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 229.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 24585 strings out of 481239
- 665647 string characters out of 5920377
- 2433947 words of memory out of 5000000
- 39446 multiletter control sequences out of 15000+600000
- 539603 words of font info for 44 fonts, out of 8000000 for 9000
+ 24154 strings out of 481239
+ 655393 string characters out of 5920377
+ 5000001 words of memory out of 5000000
+ 39069 multiletter control sequences out of 15000+600000
+ 532636 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,21n,115p,777b,2635s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/images/figures.pdf (1 page, 392239 bytes).
-PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 68i,1n,98p,777b,1424s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/catherinej/BreachPaper/BarrierBreachPaper/images/figures.tex:118:  ==> Fatal error occurred, no output PDF file produced!

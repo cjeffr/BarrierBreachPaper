@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  1 MAY 2023 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.12)  3 MAY 2023 20:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -969,176 +969,24 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-
-Package natbib Warning: Citation `Oertel1985TheSystem' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Stutz2001ADistribution' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Oertel1985TheSystem' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Kraus2003a' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Wamsley2005CoastalClosure' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `KRAUS2005' on page 3 undefined on input line 44.
-
-
-Package natbib Warning: Citation `Kraus2002' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Kraus2002' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Pierce1970' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Kraus2002' on page 3 undefined on input line 46.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 3 undefined on input line 46.
-
-[3]
-
-Package natbib Warning: Citation `Kraus2003' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Pierce1970' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Roelvink2009' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Pierce1970' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Smallegan2017' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Smallegan2017' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Smallegan2017' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Kraus2003' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Kraus2003a' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Vander2019' on page 4 undefined on input line 48.
-
-
-Package natbib Warning: Citation `Kraus2003a' on page 4 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Schmeltz1983Breach/InletInlet.' on page 4 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Visser1999' on page 4 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Buynevich2006' on page 4 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Kraus2003a' on page 4 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Schmeltz1983Breach/InletInlet.' on page 4 undefined on input line 50.
-
-[4]
-
-Package natbib Warning: Citation `Zhang2011' on page 5 undefined on input line 52.
-
-
-Package natbib Warning: Citation `Zhang2011' on page 5 undefined on input line 52.
-
-
-Package natbib Warning: Citation `Center2006' on page 5 undefined on input line 52.
-
-[5]
-
-Package natbib Warning: Citation `clawpack' on page 6 undefined on input line 58.
-
-
-Package natbib Warning: Citation `mandli2016clawpack' on page 6 undefined on input line 58.
-
-
-Package natbib Warning: Citation `Berger2011TheRefinement' on page 6 undefined on input line 58.
-
-
-Package natbib Warning: Citation `Mandli2014' on page 6 undefined on input line 60.
-
-
-Package natbib Warning: Citation `Visser1999' on page 6 undefined on input line 63.
-
-[6]
-
-LaTeX Warning: Reference `eq:breach_gaussian' on page 7 undefined on input line 65.
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 65.
 LaTeX Font Info:    Trying to load font information for OML+cmbrm on input line 65.
-(/usr/share/texlive/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
 File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Trying to load font information for OMS+cmbrs on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/omscmbrs.fd
 File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
-)
+) [7] [8]
 
-Package natbib Warning: Citation `Visser1999' on page 7 undefined on input line 65.
+Package natbib Warning: Citation `NACCS' on page 9 undefined on input line 78.
 
-
-Package natbib Warning: Citation `cialone2015north' on page 7 undefined on input line 72.
-
-
-Package natbib Warning: Citation `cires2014continuously' on page 7 undefined on input line 72.
-
-
-Package natbib Warning: Citation `weatherall2015new' on page 7 undefined on input line 72.
-
-[7]
-
-Package natbib Warning: Citation `Canizares2008' on page 8 undefined on input line 78.
-
-
-Package natbib Warning: Citation `Schmeltz1983Breach/InletInlet.' on page 8 undefined on input line 79.
-
-
-Package natbib Warning: Citation `Kraus2003a' on page 8 undefined on input line 79.
-
-
-Package natbib Warning: Citation `Visser1999' on page 8 undefined on input line 79.
-
-
-Package natbib Warning: Citation `Canizares2008' on page 8 undefined on input line 79.
-
-[8]
+[9]
 \openout3 = `main.fff'.
 
- (main.fff) [9] [10] [11] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl
+ (main.fff) [10] [11] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtl on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
@@ -1157,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--23
 \T1/cmtl/m/n/12 Library/Files/69/69E24870-C44F-49FD-BB3E-73EF76EEBE02.pdf
  []
 
-
+[12]
 Underfull \hbox (badness 6380) in paragraph at lines 32--40
 []\T1/phv/m/n/12 R. Cañizares and J. L. Irish.  Sim-u-la-tion of storm-induced bar-rier is-land
  []
@@ -1172,12 +1020,12 @@ Underfull \hbox (badness 6032) in paragraph at lines 32--40
 \T1/phv/m/n/12 2008.  ISSN 03783839.  doi: 10.1016/j.coastaleng.2008.04.006.  URL
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 []\T1/phv/m/n/12 Clawpack De-vel-op-ment Team.  Claw-pack soft-ware, 2020.  URL
  []
 
-
+[13]
 Underfull \hbox (badness 3838) in paragraph at lines 70--74
 []\T1/phv/m/n/12 N. C. Kraus and K. Hayashi.  Nu-mer-i-cal Mor-pho-logic Model of Bar-rier Is-
  []
@@ -1187,7 +1035,7 @@ Underfull \hbox (badness 2662) in paragraph at lines 105--108
 []\T1/phv/m/n/12 National Hur-ri-cane Cen-ter.  Hur-ri-cane Pre-pared-ness - Haz-ards, 2006.  URL
  []
 
-[13]
+
 Underfull \hbox (badness 1789) in paragraph at lines 125--133
 []\T1/phv/m/n/12 D. Roelvink, A. Re-niers, A. Van Don-geren, J. Van Thiel De Vries, J. Lescin-
  []
@@ -1207,7 +1055,7 @@ Underfull \hbox (badness 1189) in paragraph at lines 125--133
 \T1/phv/m/n/12 1696, 2009.  ISSN 01613782.  doi: 10.1016/j.coastaleng.2009.08.006.  URL
  []
 
-
+[14]
 Underfull \hbox (badness 1796) in paragraph at lines 161--170
 \T1/phv/m/n/12 Sher-wood.  Mor-pho-dy-namic mod-el-ing of the re-sponse of two bar-rier is-lands
  []
@@ -1217,473 +1065,144 @@ Underfull \hbox (badness 2503) in paragraph at lines 161--170
 \T1/phv/m/n/12 106404, 2019.  ISSN 02727714.  doi: 10.1016/j.ecss.2019.106404.  URL
  []
 
-[14])
+[15])
 
 Package natbib Warning: There were undefined citations.
 
-AED endfloat: Processing end Figures and Tables [15] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff
+AED endfloat: Processing end Figures and Tables [16] (/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff
 
 pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<dot_map.pdf, id=63, 657.15514pt x 392.16513pt>
+<dot_map.pdf, id=66, 657.15514pt x 392.16513pt>
 File: dot_map.pdf Graphic file (type pdf)
 <use dot_map.pdf>
 Package pdftex.def Info: dot_map.pdf  used on input line 3.
 (pdftex.def)             Requested size: 352.31625pt x 210.25208pt.
-[16 </home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/west_central_east_surge.pgf) [17
-
-
-
-]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file 'gt_6_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-PGFPlots: reading {gt_6_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '6_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {6_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '5_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {5_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '4_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {4_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '3_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {3_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '2_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {2_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:35: Package pgfplots Error: Could not read table file '1_breaches.csv' in 'search path=.'. In case you intended to provide inline data: maybe TeX screwed up your end-of-lines? Try `row sep=crcr' and terminate your lines with `\\' (refer to the pgfplotstable manual for details).
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35                 }
-                      
-(That was another \errmessage.)
-
-PGFPlots: reading {1_breaches.csv}
-
-Package pgfplots Warning: the current plot has no coordinates (or all have been filtered away) on input line 35.
-
- [warning /pgfplots/warning/plot without coordinates]
-
-Package pgfplots Warning: You have an axis with empty range (in direction y). Replacing it with a default range and clearing all plots. on input line 37.
-
- [warning /pgfplots/warning/empty range cleared axis]
-Missing character: There is no ; in font nullfont!
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37         \end{axis}
-                       
-(That was another \errmessage.)
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Extra }, or forgotten \endgroup.
-\endpgfpicture ...globally \endgroup \hss \egroup 
-                                                  \pgf@restore@layerlist@fro...
-l.37         \end{axis}
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Extra }, or forgotten \endgroup.
-\endpgfpicture ...dpicture \endgroup \hss \egroup 
-                                                  \pgfsys@typesetpicturebox ...
-l.37         \end{axis}
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Extra }, or forgotten \endgroup.
-\pgfplotsutil@END@cell@picture ...picture \egroup 
-                                                  \egroup \pgftransformshift...
-l.37         \end{axis}
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Extra }, or forgotten \endgroup.
-\pgfplotsutil@END@cell@picture ...\egroup \egroup 
-                                                  \pgftransformshift {\pgfpl...
-l.37         \end{axis}
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:37: Missing } inserted.
-<inserted text> 
-                }
-l.37         \end{axis}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:38: Extra }, or forgotten \endgroup.
-\endpgfpicture ...globally \endgroup \hss \egroup 
-                                                  \pgf@restore@layerlist@fro...
-l.38 \end{tikzpicture}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:38: Missing } inserted.
-<inserted text> 
-                }
-l.38 \end{tikzpicture}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:38: Extra }, or forgotten \endgroup.
-\endpgfpicture ...dpicture \endgroup \hss \egroup 
-                                                  \pgfsys@typesetpicturebox ...
-l.38 \end{tikzpicture}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:38: Missing } inserted.
-<inserted text> 
-                }
-l.38 \end{tikzpicture}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:41: Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.41 \end{figure}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:44: LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \begin{figure}[ht]
-                       
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[17 </home/catherinej/BreachPaper/BarrierBreachPaper/dot_map.pdf>] (/home/catherinej/BreachPaper/BarrierBreachPaper/west_central_east_surge.pgf)
 PGFPlots: reading {data/100-294_surge.csv}
 
-Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+
+Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/51-100_surge.csv}
 
-Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/21-50_surge.csv}
 
-Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/16-20_surge.csv}
 
-Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/11-15_surge.csv}
 
-Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/7-10_surge.csv}
 
-Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/6_surge.csv}
 
-Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/5_surge.csv}
 
-Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/4_surge.csv}
 
-Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/3_surge.csv}
 
-Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/2_surge.csv}
 
-Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/1_surge.csv}
 
-Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 74.
+Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 49.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/100-294_surge.csv}
 
-Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/100-294_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/51-100_surge.csv}
 
-Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/51-100_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/21-50_surge.csv}
 
-Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/21-50_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/16-20_surge.csv}
 
-Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/16-20_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/11-15_surge.csv}
 
-Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/11-15_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/7-10_surge.csv}
 
-Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/7-10_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/6_surge.csv}
 
-Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/6_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/5_surge.csv}
 
-Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/5_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/4_surge.csv}
 
-Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/4_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/3_surge.csv}
 
-Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/3_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/2_surge.csv}
 
-Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/2_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {data/1_surge.csv}
 
-Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 111.
+Package pgfplots Warning: Table 'data/1_surge.csv' has an empty column name; replacing it by '0'' on input line 86.
 
  [warning /pgfplots/warning/empty column name]
 
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.fff:118: LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118     \centering
-                    
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (23.89175pt too wide) in paragraph at lines 49--88
+[][]   []
+ []
 
 
 
@@ -1691,71 +1210,45 @@ pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/m
 <min_max_mean_inundation.pdf, id=80, 743.07611pt x 460.92201pt>
 File: min_max_mean_inundation.pdf Graphic file (type pdf)
 <use min_max_mean_inundation.pdf>
-Package pdftex.def Info: min_max_mean_inundation.pdf  used on input line 119.
+Package pdftex.def Info: min_max_mean_inundation.pdf  used on input line 95.
 (pdftex.def)             Requested size: 399.29463pt x 247.67744pt.
-)
-
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.tex:234: LaTeX Error: Float(s) lost.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \end{document}
-                    
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[18
 
 
-/home/catherinej/BreachPaper/BarrierBreachPaper/main.tex:234: LaTeX Error: \begin{figure} on input line 19 ended by \end{document}.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+]
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
-(/home/catherinej/BreachPaper/BarrierBreachPaper/main.aux
+LaTeX Warning: Text page 19 contains only floats.
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+[19 </home/catherinej/BreachPaper/BarrierBreachPaper/min_max_mean_inundation.pdf>]
 
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 234.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 19 (\begingroup)
-### simple group (level 1) entered at line 234 ({)
-### bottom level 
+pdfTeX warning: pdflatex (file /home/catherinej/BreachPaper/BarrierBreachPaper/6_vs_11_breaches.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<6_vs_11_breaches.pdf, id=107, 920.5391pt x 296.307pt>
+File: 6_vs_11_breaches.pdf Graphic file (type pdf)
+<use 6_vs_11_breaches.pdf>
+Package pdftex.def Info: 6_vs_11_breaches.pdf  used on input line 103.
+(pdftex.def)             Requested size: 352.31625pt x 113.4026pt.
+) [20 </home/catherinej/BreachPaper/BarrierBreachPaper/6_vs_11_breaches.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
+ (/home/catherinej/BreachPaper/BarrierBreachPaper/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 222.
+ ) 
 Here is how much of TeX's memory you used:
- 28471 strings out of 481239
- 720591 string characters out of 5920377
- 2140448 words of memory out of 5000000
- 43209 multiletter control sequences out of 15000+600000
+ 28460 strings out of 481239
+ 720490 string characters out of 5920377
+ 2207063 words of memory out of 5000000
+ 43211 multiletter control sequences out of 15000+600000
  580803 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,22n,119p,1921b,2722s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbtl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (17 pages, 890480 bytes).
+ 86i,21n,119p,1921b,2716s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbtl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on /home/catherinej/BreachPaper/BarrierBreachPaper/main.pdf (20 pages, 2962833 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 164 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
