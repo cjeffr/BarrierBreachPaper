@@ -9,7 +9,7 @@
 \usepackage{lineno}
 \usepackage[nolists]{endfloat}
 \usepackage{pgfplots}
-\usepackage{subfig}
+\usepackage{subfigure}
 \usetikzlibrary{external}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colorbrewer}
@@ -63,7 +63,7 @@ The storm we employ to simulate storm surge is a proxy for the 1938 New England 
 The 1938 hurricane at Moriches, NY caused six breaches, three west of the inlet and three east of the inlet; quantifying the bay and coastal flooding changes during this hurricane requires that we vary the locations, timing, width, and depth of these breaches and recording the differences in synthetic tide gauges placed around the bay and recording maximum water levels in a large grid that is resolved to 18 meters. A no breach scenario provided the baselines we used for quantifying differences in breaching scenarios and verifying a breaching location is viable. We simulated synthetic tide gauges on the seaward side of the bay as a proxy for island inundation. Once a breach location is chosen we verify it is viable by taking the synthetic tide gauges within one km of the breach and calculate that the tide gauge reaches a minimum of 24\% of the dune height. If no gauges within one km reach that water height we choose a new location and start the test over. This allows for a reasonable estimate of the conditions that could induce breaching, if the water levels just offshore do not reach a critical height it is unlikely a breach would open at that location.
 
 \subsection*{Simulations} 
-Our simulations were set up with with a basin scale bathymetry using GEBCO 30 arc second \citep{weatherall2015new} for the region that spans 98W to 57 W and 5N to 45N. Moriches, NY bathymetry  is from NOAA's continuously updated 1/9 arc second topobathy dataset \citep{cires2014continuously}. Use modifed GeoClaw's AMR to focus on the bay at 18 x 18 meter cells that is refined well before the storm arrives to observe the surge as it enters the bay. We place synthetic tide gauges dispersed through the bay in the same configuration that was used for the NACCS project maximum surge locations \citep{NACCS} and a series of tide gauges on the seaward side of the barrier every two kilometers that we used to verify offshore surge height for breach initiation.
+Our simulations were set up with with a basin scale bathymetry using GEBCO 30 arc second \citep{weatherall2015new} for the region that spans 98W to 57 W and 5N to 45N. Moriches, NY bathymetry  is from NOAA's continuously updated 1/9 arc second topobathy dataset \citep{cires2014continuously}. Use modified GeoClaw's AMR to focus on the bay at 18 x 18 meter cells that is refined well before the storm arrives to observe the surge as it enters the bay. We place synthetic tide gauges dispersed through the bay in the same configuration that was used for the NACCS project maximum surge locations \citep{NACCS} and a series of tide gauges on the seaward side of the barrier every two kilometers that we used to verify offshore surge height for breach initiation.
 
 We started with the original six breach dimensions as estimated from \citet{Canizares2008}, from there we created a monte-carlo framework that employs a random uniform distribution for each breach's size and location. The time of initiation for each breach was chosen using the nearest synthetic tide gauge data from a no breach simulation; the first time in seconds the nearest tide gauge reaches 24\% of the maximum dune height at each location was our start time. We chose to have the breaches fully open within one hour after initiation.
 
@@ -71,7 +71,7 @@ For our first grouping of scenarios we used the original breach locations formed
 Finally, we varied; the number of breaches, the width, the depth, and the locations of each breach. We used a maximum number of breaches as the maximum 'viable' locations per our criteria above. This provided a maximum of 295 individual breach locations possible.
 
 \subsection{Data analysis}
-We evaluated our results using the maximum surge height data recorded by GeoClaw for the entire bay and at select synthetic tide gauges. We divided the bay into three sections, west, central, and east, we compared the different types of simulations. We calculated inundation differences by first identifying the grid cells that were on land in the bathymetry, and were inundated in a no breach scneario (wet cells). We used that grid of cells to then identify the changes in inundation for each simulation. Each cell is an 18x18 square meters which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region. Additionally, We gathered the data from our select bay tide gauges and calculated the mean of each category of simulation to visualize trends in the different categories across the surge timing and locations. 
+We evaluated our results using the maximum surge height data recorded by GeoClaw for the entire bay and at select synthetic tide gauges. We divided the bay into three sections, west, central, and east, we compared the different types of simulations. We calculated inundation differences by first identifying the grid cells that were on land in the bathymetry, and were inundated in a no breach scenario (wet cells). We used that grid of cells to then identify the changes in inundation for each simulation. Each cell is an 18x18 square meters which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region. Additionally, We gathered the data from our select bay tide gauges and calculated the mean of each category of simulation to visualize trends in the different categories across the surge timing and locations. 
 
 \section{Results}
 To analyse the results we looked at both surge height at random points in the bay and total inundation in square meters. Figure 1 illustrates the locations of each chosen storm surge point and the locations of the synthetic tide gauges for each section of the bay.
@@ -79,7 +79,7 @@ To analyse the results we looked at both surge height at random points in the ba
     \centering
     \includegraphics[width=0.75\textwidth]{dot_map.pdf}
     \caption{Map of Moriches Bay, NY. Orange circles indicate locations of synthetic tide gauges. Teal circles indicate locations of surge data}
-    \label{fig1}
+    \label{fig:1}
 \end{figure}
 
 We chose three random locations by first dividing the bay into thirds, and for each section (west, central, east) we used a random uniform distribution to choose the point to study the maximum surge. Figure 2 illustrates the surge heights for each category of simulation. The mean of the surge height is higher for the random everything variations with the density peak at 1.75, 1.70, 1.43 for west, central, east bay respectively. The variance is also large at 0.05, 0.024, 0.03 as compared to the other simulations. When constrained by a maximum of six breaches the depth variations have the largest surge height mean at 1.06, 1.07, .84. The width scenarios mean surge height is 0.97, 1.09, 0.78 and the width/depth/number of breaches simulations have a mean surge height of 0.88, 0.98, 0.72. The width scenarios have a larger variance of 0.004, 0.004, 0.002 as compared to depth 0.003, 0.0003, 0.005 or both 0.006, 0.002, 0.002. 
@@ -90,18 +90,16 @@ We chose three random locations by first dividing the bay into thirds, and for e
             \input{west_central_east_surge.pgf}
         }
     \caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
-    \label{fig2}
+    \label{fig:2}
 \end{figure}
 
-Figure 3a illustrates the relationship between total breach area ($km^2$) and total inundation change from a no breach simulation. The relationship starts with a minimum inundation of .1632 $km^2$ and illustrates that more breach area leads to more inundation to a point, around 75 possible breaches the curve levels off at a total breach area of .035 $km^2$ and an inundation change around 40.1 square kilometers. Inundation change grows more slowly beyond this point to a maximum total inundation of 49.06 $km^2$. Figure 3b zooms in on an the initial curve of simualations with under 20 breaches.  
+Figure 3a illustrates the relationship between total breach area ($km^2$) and total inundation change from a no breach simulation. The relationship starts with a minimum inundation of .1632 $km^2$ and illustrates that more breach area leads to more inundation to a point, around 75 possible breaches the curve levels off at a total breach area of .035 $km^2$ and an inundation change around 40.1 square kilometers. Inundation change grows more slowly beyond this point to a maximum total inundation of 49.06 $km^2$. Figure 3b zooms in on an the initial curve of simulations with under 20 breaches.  
 
 \begin{figure}[ht]
-\centering
-    \subfloat[]{\includegraphics[width=0.75\textwidth]{images/output-figure1.pdf}}
-    \subfloat[]{\includegraphics[width=0.75\textwidth]{images/output-figure2.pdf}}
-     \label{fig3}
-        \caption{ a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
-        \label{fig3}
+    \centering
+    \includegraphics[width=\textwidth]{fig3.pdf}
+    \caption{a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
+    \label{fig:3}
 \end{figure}
 
 Inundation differences are calculated from the number of 'wet' cells changed from a no breach scenario. Each cell is an 18x18 meters squared which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region.
@@ -113,8 +111,8 @@ Figure 3 also shows that number of breaches is strongly correlated to total inun
     \centering
     \includegraphics[width=0.85\textwidth]{min_max_mean_inundation.pdf}
 
-    \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simualation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
-    \label{fig4}
+    \caption{Maps Moriches Bay, NY. Each panel is a separate simulation representing different values of storm surge inundation. Panel (a) is no breach scenario. Panel (b) is the minimum inundation with a single small breach. Panel (c) is the largest inundation scenario with 6 wide breaches. Panel (d)  is a simulation that has the closest inundation to the mean of all 1500 simulations, with 4 moderate sized breaches.}
+    \label{fig:4}
 \end{figure}
 
 Figures 4. illustrate that different inundation patterns are correlated to number and size of breaches. Figure 4a is a no breach scenario which looks very similar in surge and inundation distribution to the minimum inundation which has only a single small breach. There are only approximately 500 different wet vs. dry cells between these two, which is 163,000 square meters or .1632 square kilometers of inundation. The scenario that comes closest to the mean of all the inundation is six moderately sized breaches with an area of .005 $km^2$ and total inundation change of 13.06 $km^2$ the pattern of bay flooding and inundation is very different from the no breach or minimum inundation scenarios, with higher flooding potential in the river drainages and along the lower elevation coastlines. Lastly the maximum inundation scenario is one where most of the island has been inundated, this scenario has a bay surge of approximately 2 meters in most areas and the lowest elevation areas of the coastline completely flooded.
@@ -124,7 +122,7 @@ Figure 5 shows the differences between two simulations with the a similar total 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{6_vs_11_breaches.pdf}
+    \includegraphics[width=0.95\textwidth]{6_vs_11_breaches.pdf}
     \caption{a) maximum surge and inundation for simulation that has 11 breaches and a total area of .036 $km^2$. b) maximum surge and inundation for simulations with 6 breaches and .039 $km^2$}
     \label{fig5}
 \end{figure}
