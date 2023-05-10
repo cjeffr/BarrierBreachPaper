@@ -9,26 +9,14 @@
 \usepackage{lineno}
 \usepackage[nolists]{endfloat}
 \usepackage{pgfplots}
-\usepackage{subfigure}
+\usepackage{subfig}
 \usetikzlibrary{external}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colorbrewer}
 
 \usepgfplotslibrary{colorbrewer}
 \usepgfplotslibrary{statistics}
-\pgfplotsset{
-    myplotstyle/.style={
-    legend style={draw=none, font=\tiny},
-    legend cell align=left,
-    legend pos=south east,
-    ylabel style={align=center, font=\sffamily\boldmath},
-    xlabel style={align=center, font=\sffamily\boldmath},
-    x tick label style={font=\sffamily\boldmath, align=center},
-    y tick label style={font=\sffamily\boldmath, align=center},
-    scaled ticks=false,
-    every axis plot/.append style={thick},
-    },
-}
+
 \graphicspath{ {./images/fgmax}}
 \title{Impacts of Barrier-Island Breaching On Mainland Flooding During Storm Events}
 \author{Catherine Jeffries, Robert Weiss, Jennifer Irish, Kyle Mandli}
@@ -103,100 +91,23 @@ We chose three random locations by first dividing the bay into thirds, and for e
         }
     \caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
     \label{fig2}
-    \end{figure}
+\end{figure}
 
 Figure 3a illustrates the relationship between total breach area ($km^2$) and total inundation change from a no breach simulation. The relationship starts with a minimum inundation of .1632 $km^2$ and illustrates that more breach area leads to more inundation to a point, around 75 possible breaches the curve levels off at a total breach area of .035 $km^2$ and an inundation change around 40.1 square kilometers. Inundation change grows more slowly beyond this point to a maximum total inundation of 49.06 $km^2$. Figure 3b zooms in on an the initial curve of simualations with under 20 breaches.  
 
 \begin{figure}[ht]
-    \subfigure[]
-    {
-    \begin{tikzpicture}[scale=0.95]
-        \begin{axis}
-            [cycle list/Dark2,
-            myplotstyle,
-            table/col sep=comma,
-            ylabel={Inundation area ($km^2$) \\ changes from no breach},
-            xlabel={Total breach area ($km^2$)},
-            legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},
-            xtick={0,0.01,..., 0.1},
-            xticklabels={},
-            extra x ticks={0, 0.02,0.04, 0.06, 0.08, 0.1},
-            extra x tick labels={$0$,$0.02$,  $0.04$, $0.06$,  $0.08$,  $0.1$},
-            legend style={at={(.95,.05)},
-                            nodes={scale=0.35, transform shape},                    
-                            anchor=south east,                       
-                            draw=black,                      
-                            fill=white,                      
-                            font=\footnotesize,                      
-                            cells={anchor=west},                      
-                            rounded corners=2pt,
-                                   }]
-            \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
-                \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{data/\i_surge.csv};
-                }
-        \end{axis}
-
-\end{tikzpicture}
-\label{fig3}
-\caption{Total breach area ($km^2$) vs. Total change in inundation from a no breach scenario. Colors are organized by number of breaches}
-
+\centering
+    \subfloat[]{\includegraphics[width=0.75\textwidth]{images/output-figure1.pdf}}
+    \subfloat[]{\includegraphics[width=0.75\textwidth]{images/output-figure2.pdf}}
+     \label{fig3}
+        \caption{ a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
+        \label{fig3}
 \end{figure}
 
 Inundation differences are calculated from the number of 'wet' cells changed from a no breach scenario. Each cell is an 18x18 meters squared which provides a total area of 324 square meters. Comparing this against the no breach scenario provides us insight into how different breach dimensions affect the total inundation area of the region.
 
 In figure 3 we show that the total breach dimensions have a relationship to the total area of inundation, with larger and more numerous breaches bringing more water inland. While there appears to be a stronger correlation to breach width and inundation than depth, breach depth is at least a factor of 20 smaller than total width for these scenarios.
 Figure 3 also shows that number of breaches is strongly correlated to total inundation area. 
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.75\textwidth]{../../BarrierBreach/visualization/inundation_x_total_breach_area.png}
-    \caption{Scatter plot showing total breach area in square kilometers vs. inundation in square kilometers difference from a no breach simulation}
-    \hspace{.5cm}
-    \subfigure[]
-    {
-    \begin{tikzpicture}[scale=0.95]
-        \begin{axis}
-            [cycle list/Dark2,       
-             myplotstyle,        
-             table/col sep=comma,        
-            %  ylabel={Inundation area ($km^2$) \\ changes from no breach},        
-             xlabel={Total breach area ($km^2$)},  
-             legend entries={100-294 breaches, 51-100 breaches, 21-50 breaches, 16-20 breaches, 11-15 breaches,7-10 breaches, 6 breaches, 5 breach, 4 breaches, 3 breaches, 2 breaches, 1 breach},    
-             xtick={0,0.00075,0.0015,...,0.075},
-             xtick distance={0.00075},        
-             xticklabels={},        
-             xmin=0,
-             xmax=0.0075,
-             ymin=0,
-             ymax=25,
-             extra x ticks={0, 0.0015,0.0045,0.0075},
-             extra x tick labels={$0$,$0.0015$, $0.0045$, $0.0075$},      
-             legend columns=1,        
-             legend style={at={(.95,.05)},
-                            nodes={scale=0.35, transform shape},                    
-                            anchor=south east,                       
-                            draw=black,                      
-                            fill=white,                      
-                            font=\footnotesize,                      
-                            cells={anchor=west},                      
-                            rounded corners=2pt,
-                                   }]
-            
-            \foreach \i in {100-294, 51-100, 21-50, 16-20, 11-15, 7-10, 6, 5, 4, 3, 2, 1}{
-            \addplot+[only marks, draw=black, line width=.01mm]table[x=breach_area, y=inundation, col sep=comma]{data/\i_surge.csv};
-            }
-    
-        \end{axis}
-    \end{tikzpicture}}
-    \label{fig3}
-    \caption{ a) Total inundation vs. total breach size for all 1500 scenarios, points are colored per number of breach categories. b) zoom in of a) panel to show differentiation of breach area and number of breaches and how the inundation can vary}
-    \end{figure}
-
-
-Figure 4 shows the differences between two simulations with the a similar total breach area, however the total inundation is very different. Figure 4a, shows a scenario with six breaches in the locations that occurred during the 1938 hurricane, the total breach area is .0039 $km^2$, and total inundation is 10.44 $km^2$. Figure 4b, has a smaller breach area at .0036 $km^2$ but a larger inundation at 12.03 $km^2$.
-
 
 \begin{figure}
     \centering
@@ -207,6 +118,16 @@ Figure 4 shows the differences between two simulations with the a similar total 
 \end{figure}
 
 Figures 4. illustrate that different inundation patterns are correlated to number and size of breaches. Figure 4a is a no breach scenario which looks very similar in surge and inundation distribution to the minimum inundation which has only a single small breach. There are only approximately 500 different wet vs. dry cells between these two, which is 163,000 square meters or .1632 square kilometers of inundation. The scenario that comes closest to the mean of all the inundation is six moderately sized breaches with an area of .005 $km^2$ and total inundation change of 13.06 $km^2$ the pattern of bay flooding and inundation is very different from the no breach or minimum inundation scenarios, with higher flooding potential in the river drainages and along the lower elevation coastlines. Lastly the maximum inundation scenario is one where most of the island has been inundated, this scenario has a bay surge of approximately 2 meters in most areas and the lowest elevation areas of the coastline completely flooded.
+
+Figure 5 shows the differences between two simulations with the a similar total breach area, however the total inundation is very different. Figure 4a, shows a scenario with six breaches in the locations that occurred during the 1938 hurricane, the total breach area is .0039 $km^2$, and total inundation is 10.44 $km^2$. Figure 4b, has a smaller breach area at .0036 $km^2$ but a larger inundation at 12.03 $km^2$.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{6_vs_11_breaches.pdf}
+    \caption{a) maximum surge and inundation for simulation that has 11 breaches and a total area of .036 $km^2$. b) maximum surge and inundation for simulations with 6 breaches and .039 $km^2$}
+    \label{fig5}
+\end{figure}
 
 
 
@@ -228,16 +149,6 @@ Figures 4. illustrate that different inundation patterns are correlated to numbe
     \item Illustrate the asymptote of the breach/inundation curve? showing how much of the island is gone?
     \item Discuss what does this mean for the people living here?
 \end{itemize}
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.75\textwidth]{6_vs_11_breaches.pdf}
-    \caption{a) maximum surge and inundation for simulation that has 11 breaches and a total area of .036 $km^2$. b) maximum surge and inundation for simulations with 6 breaches and .039 $km^2$}
-    \label{fig5}
-\end{figure}
-
-
 
 Figure 3 illustrates that total breach area in the island is the strongest determining factor in higher mainland inundation. The depth variations show a higher mean inundation area due to some of the original breaches being very large, on the order to 20-100 times wider than the total depth. Single small breaches have less inundation potential than multiple small breaches or many breaches of mixed total area. Total width runs from 25 - 630 meters whereas total depth goes from 0 to -2.0 meters. 
 Changing the locations of the breaches adn varying the number of breaches allowed to be the total number of viable sites on the island (around 295) shows...% Analyse the new simulations
