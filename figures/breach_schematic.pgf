@@ -529,7 +529,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.619608,0.450980}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.200000in,y=3.664000in,,base]{\color{textcolor}\sffamily\fontsize{10.000000}{12.000000}\bfseries\selectfont Total Width (\(\displaystyle X\))}%
+\pgftext[x=3.200000in,y=3.664000in,,base]{\color{textcolor}\sffamily\fontsize{10.000000}{12.000000}\bfseries\selectfont (\(\displaystyle X\) - \(\displaystyle \mu\))}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetroundcap%
