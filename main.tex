@@ -15,6 +15,7 @@
 \usetikzlibrary{external}
 \pgfplotsset{compat=1.9}
 \usepgfplotslibrary{colorbrewer}
+\usepackage{adjustbox}
 
 \usepgfplotslibrary{colorbrewer}
 \usepgfplotslibrary{statistics}
@@ -120,7 +121,6 @@ To analyze the results we looked at both surge height at random points in the ba
 \end{figure}
 
 \section{Results}
-
  Figure~\ref{fig:3} illustrates the surge heights for each category of simulation. The mean of the surge height is higher for the \emph{Location} simulations with the density peak at 1.75 meters, 1.70 meters, and 1.43 meters for west, central, east bay respectively. The variance is also large at 0.05 m$^2$, 0.024 m$^2$, 0.03 m$^2$ as compared to the other simulations. When constrained by a maximum of six breaches the depth variations have the largest surge height mean at 1.06 m, 1.07 m, 0.84 m. The width scenarios mean surge height is 0.97 m, 1.09 m, 0.78 m and the width/depth/number of breaches simulations have a mean surge height of 0.88 m, 0.98 m, 0.72 m. The width scenarios have a larger variance of 0.004 m$^2$, 0.004 m$^2$, 0.002 m$^2$ as compared to depth 0.003 m$^2$, 0.0003 m$^2$, 0.005 m$^2$ or both 0.006 m$^2$, 0.002 m$^2$, 0.002 m$^2$. 
 
 \begin{figure}[ht]
@@ -131,6 +131,14 @@ To analyze the results we looked at both surge height at random points in the ba
     \caption{Maximum surge height in meters for each selected location shown in Figure 1 (green dots). Data shows 1500 scenarios split into four categories. Six breaches where width is randomized (blue) (464 scenarios), six breaches where depth is randomized (green) (424 scenarios). Varying width, depth, and number of breaches up to six breaches (orange) (297 scenarios). Varying width, depth, location, and number of breaches up to 295 breaches (315)}
     \label{fig:3}
 \end{figure}
+
+\begin{table}[ht]
+    \begin{adjustbox}{width=0.9\textwidth} % <-- Set the desired width (e.g., 0.9 times the text width)
+    \input{figures/fgmax_statistics_table.tex}
+    \end{adjustbox}
+    \caption{Maximum surge height (m) for each category of breach simulations at each of the three points shown on Fig. \ref{fig:2}}
+    \label{table:2}
+\end{table}
 
 For each bay region we used two synthetic tide gauges to track the surge timing and maximum surge of each scenario. Figure \ref{fig:4} illustrates the differences in timing by calculating the mean of each type of simulation at each gauge location.
 \begin{figure}[ht]
